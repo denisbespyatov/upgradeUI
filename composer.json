@@ -1,0 +1,22 @@
+{
+    "name": "denisbespyatov/upgradeui",
+    "description": "Yii2 UpgradeUI Admin Theme",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Bespyatov",
+            "email": "denis@bespyatov.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-bootstrap5": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "denisbespyatov\\upgradeui\\": ""
+        }
+    }
+}
