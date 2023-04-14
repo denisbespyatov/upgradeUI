@@ -28,4 +28,6 @@ or add
 to the require section of your `composer.json` file.
 
 composer config minimum-stability dev
+composer config prefer-stable true
+
 composer update
