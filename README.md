@@ -32,7 +32,7 @@ composer config minimum-stability dev
 composer config prefer-stable true
 ```
 
-and
+and 
 
 ```
 composer update
