@@ -12,7 +12,7 @@ body {
 .sidebar,
 .sidebar-content {
     transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
-    background: #222e3c;
+    background: var(--bs-secondary-bg);
 }
 
 .sidebar {
@@ -28,7 +28,7 @@ body {
     min-width: 0;
     min-height: 100vh;
     transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
-    background: #f5f7fb;
+    background: var(--bs-body-bg);
     flex-direction: column;
     overflow: hidden;
     border-top-left-radius: 0;
@@ -57,7 +57,7 @@ body {
     border-radius: 1px;
     height: 3px;
     width: 24px;
-    background: #495057;
+    background: var(--bs-body-color);
     display: block;
     content: "";
     transition: background .1s ease-in-out, color .1s ease-in-out;
@@ -76,7 +76,7 @@ body {
 }
 
 .navbar-bg {
-    background: #fff;
+    background: var(--bs-body-bg);
 }
 
 .navbar {
@@ -116,14 +116,14 @@ body {
     background: transparent;
     padding: 1.5rem 1.5rem .375rem;
     font-size: .75rem;
-    color: #ced4da;
+    color: rgba(var(--bs-body-color-rgb),.5);
 }
 
 .sidebar-item.active .sidebar-link:hover,
 .sidebar-item.active>.sidebar-link {
-    color: #e9ecef;
-    background: linear-gradient( 90deg, rgba(59, 125, 221, .1), rgba(59, 125, 221, .0875) 50%, transparent);
-    border-left-color: #3b7ddd;
+    color:var(--bs-body-color);
+    background: linear-gradient( 90deg, rgba(var(--bs-link-color-rgb), .1), rgba(var(--bs-link-color-rgb), .0875) 50%, transparent);
+    border-left-color: var(--bs-link-color);
 }
 
 .sidebar-link,
@@ -135,8 +135,8 @@ a.sidebar-link {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: rgba(233, 236, 239, .5);
-    background: #222e3c;
+    color: rgba(var(--bs-body-color-rgb), .5);
+    background: var(--bs-secondary-bg);
     border-left: 3px solid transparent;
 }
 
@@ -163,7 +163,7 @@ a.sidebar-link {
 .sidebar-item.active .sidebar-link:hover svg,
 .sidebar-item.active>.sidebar-link i,
 .sidebar-item.active>.sidebar-link svg {
-    color: #e9ecef;
+    color: var(--bs-link-color);
 }
 
 .sidebar-link i,
@@ -171,7 +171,7 @@ a.sidebar-link {
 a.sidebar-link i,
 a.sidebar-link svg {
     margin-right: .75rem;
-    color: rgba(233, 236, 239, .5);
+    color: var(--bs-secondary-color-rgb);
 }
 
 a.sidebar-link svg {
@@ -207,8 +207,7 @@ a.sidebar-link {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: rgba(233, 236, 239, .5);
-    background: #222e3c;
+    color: var(--bs-secondary-color);
     border-left: 3px solid transparent;
 }
 
@@ -313,7 +312,7 @@ a.sidebar-link {
 }
 
 .nav-item .indicator {
-    background: #3b7ddd;
+    background: var(--bs-link-color);
     box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 5%);
     border-radius: 50%;
     display: block;
@@ -329,6 +328,7 @@ a.sidebar-link {
     color: #fff;
 }
 
+/*
 .dropdown-menu {
     position: absolute;
     z-index: 1000;
@@ -337,10 +337,10 @@ a.sidebar-link {
     padding: .5rem 0;
     margin: 0;
     font-size: .875rem;
-    color: #495057;
+    color: var(--bs-body-color);
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: var(--bs-body-bg);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .2rem;
@@ -354,7 +354,7 @@ a.sidebar-link {
     padding: .75rem;
     text-align: center;
     font-weight: 600;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid rgba(var(--bs-body-color-rgb),.5);
 }
 
 .dropdown-menu-footer {
@@ -363,6 +363,7 @@ a.sidebar-link {
     display: block;
     font-size: .75rem;
 }
+*/
 
 @media (max-width: 575.98px) {
     .nav-item.dropdown {
@@ -390,8 +391,6 @@ a.sidebar-link {
 
 footer.footer {
     padding: 1rem .875rem;
-    direction: ltr;
-    background: #fff;
 }
 
 .page-body-wrapper {
@@ -416,7 +415,6 @@ footer.footer {
 }
 
 .content-wrapper {
-    background: #f3f3f3;
     padding: 2.1rem 1.04rem;
     width: 100%;
     -webkit-flex-grow: 1;
@@ -448,7 +446,7 @@ footer.footer {
 }
 
 .auth .auth-form-light {
-    background: #ffffff;
+    background: var(--bs-body-bg);
 }
 
 .auth .register-half-bg {

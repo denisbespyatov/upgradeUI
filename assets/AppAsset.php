@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright (c) 2015 Yiister
- * @license https://github.com/yiister/yii2-gentelella/blob/master/LICENSE
- * @link http://gentelella.yiister.ru
+ * @copyright Copyright (c) 2023 denisbespyatov
+ * @license https://github.com/denisbespyatov/upgradeui/blob/master/LICENSE
+ * @link https://upgradeui.denisbespyatov.ru
+ * @link https://github.com/denisbespyatov/upgradeui
  */
 
 namespace denisbespyatov\upgradeui\assets;

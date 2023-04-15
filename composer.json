@@ -1,6 +1,6 @@
 {
     "name": "denisbespyatov/upgradeui",
-    "description": "Yii2 UpgradeUI Admin Theme",
+    "description": "UpgradeUI - Yii2 Bootstrap 5 theme",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "MIT",

@@ -1,4 +1,4 @@
-Yii2 Admin theme Bootstrap 5
+UpgradeUI - Yii2 Bootstrap 5 theme 
 ===============
 
 [![Latest Stable Version](https://poser.pugx.org/denisbespyatov/upgradeui/v/stable)](https://packagist.org/packages/denisbespyatov/upgradeui)
@@ -6,7 +6,7 @@ Yii2 Admin theme Bootstrap 5
 [![License](https://poser.pugx.org/denisbespyatov/upgradeui/license)](https://packagist.org/packages/denisbespyatov/upgradeui)
 
 
-!["Yii2 Admin Theme"](https://github.com/denisbespyatov/upgradeui/blob/master/screen.png)
+!["UpgradeUI - Yii2 Bootstrap 5 theme"](https://github.com/denisbespyatov/upgradeui/blob/master/screen.png)
 
 Installation
 ------------
@@ -22,18 +22,11 @@ php composer.phar require --prefer-dist denisbespyatov/upgradeui "*"
 or add
 
 ```
-"denisbespyatov/upgradeui": "*"
+"denisbespyatov/upgradeui": "*@dev"
 ```
 
 to the require section of your `composer.json` file.
 
-```
-composer config minimum-stability dev
-composer config prefer-stable true
-```
-
-and 
-
-```
-composer update
-```
+Usage
+-----
+All you need is register `denisbespyatov\upgradeui\assets\Asset` in your layout. This extension consists a layout example. You can find it in `denisbespyatov\upgradeui\views\layouts\db-main.php`.
