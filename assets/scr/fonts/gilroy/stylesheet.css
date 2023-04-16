@@ -1,0 +1,59 @@
+@font-face {
+    font-family: gilroy;
+    src: url('900.eot');
+    src: url('900.eot?#iefix') format('embedded-opentype'),
+    url('900.woff') format('woff'),
+    url('900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('800.eot');
+    src: url('800.eot?#iefix') format('embedded-opentype'),
+    url('800.woff') format('woff'),
+    url('800.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('700.eot');
+    src: url('700.eot?#iefix') format('embedded-opentype'),
+    url('700.woff') format('woff'),
+    url('700.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('500.eot');
+    src: url('500.eot?#iefix') format('embedded-opentype'),
+    url('500.woff') format('woff'),
+    url('500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('400.eot');
+    src: url('400.eot?#iefix') format('embedded-opentype'),
+    url('400.woff') format('woff'),
+    url('400.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url('100.eot');
+    src: url('100.eot?#iefix') format('embedded-opentype'),
+    url('100.woff') format('woff'),
+    url('100.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}

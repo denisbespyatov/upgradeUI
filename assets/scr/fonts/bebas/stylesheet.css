@@ -1,0 +1,8 @@
+@font-face {
+    font-family: bebas;
+    src: url(bebas-neue.eot);
+    src: url(bebas-neue.eot?#iefix) format('embedded-opentype'), url(bebas-neue.woff2) format('woff2'), url(bebas-neue.woff) format('woff'), url(bebas-neue.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto
+}

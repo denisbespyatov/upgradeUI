@@ -1,6 +1,69 @@
-body {
-    font-family: 'Inter';
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-os-font-smoothing: grayscale;
 }
+
+body {
+    font-family: roboto, Arial, sans-serif;
+}
+
+html, body {
+    /*font-size: calc(16px + (18 - 16) * (100vw - 575px)/ (1920 - 575));
+    line-height: calc(18px + (24 - 18) * (100vw - 575px)/ (1920 - 575));*/
+}
+
+:root {
+    --bs-border-radius:     0rem;
+    --bs-border-radius-sm:  0rem;
+    --bs-border-radius-lg:  0rem;
+    --bs-border-radius-xl:  0rem;
+    --bs-border-radius-xxl: 0rem;
+    --bs-border-radius-2xl: 0rem;
+
+    --ui-sidebar-bg: #36414D;
+    --ui-sidebar-bg-rgb: 54, 65, 77;
+    --ui-sidebar-color: #E6F1FF;
+    --ui-sidebar-color-rgb: 230, 241, 255;
+    --bs-heading-color: var(--bs-gray-600);
+
+    --bs-breadcrumb-font-size:.85rem;
+
+}
+
+
+[data-bs-theme="dark"] {
+    --ui-sidebar-bg: #1a2026;
+    --ui-sidebar-bg-rgb:26,32,38;
+
+}
+.btn {
+    border-radius:0rem !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .035em;
+}
+
+.btn-shadow {
+    box-shadow: 0 .5rem 1rem -.5rem var(--bs-btn-bg);
+}
+
+.btn-xl, .btn-group-xl > .btn {
+    --bs-btn-padding-y: 1.5rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.25rem;
+}
+
+
+[data-bs-theme="dark"] {
+    --bs-heading-color: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-family: bebas, Arial, sans-serif;
+    text-transform: uppercase;
+    color: var(--bs-heading-color);
+}
+
 
 .wrap {
     display: flex;
@@ -12,7 +75,7 @@ body {
 .sidebar,
 .sidebar-content {
     transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
-    background: var(--bs-secondary-bg);
+    background: var(--ui-sidebar-bg);
 }
 
 .sidebar {
@@ -81,16 +144,13 @@ body {
 
 .navbar {
     border-bottom: 0;
-    box-shadow: 0 0 2rem 0 rgb(33 37 41 / 10%);
-}
-
-.navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: .875rem 1.375rem;
+    min-height: 70px;
 }
 
 .sidebar.collapsed {
@@ -99,11 +159,29 @@ body {
 
 .sidebar-brand {
     font-weight: 600;
-    font-size: 1.15rem;
-    padding: 1.15rem 1.5rem;
-    display: block;
-    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .875rem 1.375rem;
+    min-height: 70px;
+    /*border-bottom: 1px solid rgba(var(--bs-body-bg-rgb),.2);*/
+    background: rgba(var(--bs-body-bg-rgb),.05);
 }
+
+.app-logo {
+    color: var(--ui-sidebar-color);
+    display: flex;
+}
+
+.app-logo #appLogoText {
+    width: 6rem;
+}
+.app-logo #appLogoEl {
+    margin-right: 0.5rem;
+    width: 40px;
+    fill: var(--bs-primary);
+}
+
 
 .sidebar-nav {
     padding-left: 0;
@@ -116,13 +194,13 @@ body {
     background: transparent;
     padding: 1.5rem 1.5rem .375rem;
     font-size: .75rem;
-    color: rgba(var(--bs-body-color-rgb),.5);
+    color: rgba(var(--ui-sidebar-color-rgb), .5);
 }
 
 .sidebar-item.active .sidebar-link:hover,
-.sidebar-item.active>.sidebar-link {
-    color:var(--bs-body-color);
-    background: linear-gradient( 90deg, rgba(var(--bs-link-color-rgb), .1), rgba(var(--bs-link-color-rgb), .0875) 50%, transparent);
+.sidebar-item.active > .sidebar-link {
+    color: var(--ui-sidebar-color);
+    background: linear-gradient(90deg, rgba(var(--bs-link-color-rgb), .1), rgba(var(--bs-link-color-rgb), .0875) 50%, transparent);
     border-left-color: var(--bs-link-color);
 }
 
@@ -136,7 +214,7 @@ a.sidebar-link {
     text-decoration: none;
     cursor: pointer;
     color: rgba(var(--bs-body-color-rgb), .5);
-    background: var(--bs-secondary-bg);
+    background: var(--ui-sidebar-bg);
     border-left: 3px solid transparent;
 }
 
@@ -146,7 +224,7 @@ a.sidebar-link {
     border-width: 0 .075rem .075rem 0;
     display: inline-block;
     padding: 2px;
-    transform: rotate( 45deg);
+    transform: rotate(45deg);
     position: absolute;
     top: 1.2rem;
     right: 1.5rem;
@@ -155,14 +233,14 @@ a.sidebar-link {
 
 .sidebar [aria-expanded=true]:after,
 .sidebar [data-bs-toggle=collapse]:not(.collapsed):after {
-    transform: rotate( -135deg);
+    transform: rotate(-135deg);
     top: 1.4rem;
 }
 
 .sidebar-item.active .sidebar-link:hover i,
 .sidebar-item.active .sidebar-link:hover svg,
-.sidebar-item.active>.sidebar-link i,
-.sidebar-item.active>.sidebar-link svg {
+.sidebar-item.active > .sidebar-link i,
+.sidebar-item.active > .sidebar-link svg {
     color: var(--bs-link-color);
 }
 
@@ -171,7 +249,7 @@ a.sidebar-link {
 a.sidebar-link i,
 a.sidebar-link svg {
     margin-right: .75rem;
-    color: var(--bs-secondary-color-rgb);
+    color: var(--ui-sidebar-color-rgb);
 }
 
 a.sidebar-link svg {
@@ -202,12 +280,11 @@ a.sidebar-link svg {
 a.sidebar-link {
     display: block;
     padding: .625rem 1.625rem;
-    font-weight: 400;
     transition: background .1s ease-in-out;
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: var(--bs-secondary-color);
+    color: rgba(var(--ui-sidebar-color-rgb), .75);;
     border-left: 3px solid transparent;
 }
 
@@ -221,7 +298,7 @@ a.sidebar-link {
 
 @media (min-width: 992px) {
     .content {
-        padding: 3rem 3rem 1.5rem;
+        padding: 1.5rem 3rem 1.5rem;
     }
 }
 
@@ -245,6 +322,8 @@ a.sidebar-link {
     width: 40px;
     height: 40px;
 }
+
+/*
 
 .dropdown-toggle.user:after {
     margin-left: .255em;
@@ -290,6 +369,7 @@ a.sidebar-link {
 .dropdown-item svg {
     margin-right: .25rem!important;
 }
+*/
 
 .nav-flag,
 .nav-icon {
@@ -369,6 +449,7 @@ a.sidebar-link {
     .nav-item.dropdown {
         position: inherit;
     }
+
     .navbar-expand .navbar-nav .dropdown-menu-lg {
         min-width: 100%;
     }
@@ -384,6 +465,7 @@ a.sidebar-link {
     .sidebar {
         margin-left: -260px;
     }
+
     .sidebar.collapsed {
         margin-left: 0;
     }
@@ -453,3 +535,7 @@ footer.footer {
     background: url(../img/register-bg.jpg);
     background-size: cover;
 }
+
+
+
+.shadow1 {box-shadow: 0 0 2rem 0 rgb(0 0 0 / 10%);}
