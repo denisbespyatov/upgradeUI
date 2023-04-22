@@ -19,6 +19,7 @@ class ThemeAsset extends AssetBundle
         YII_ENV !== 'prod' ? 'bs5/css/bootstrap.css' : 'bs5/css/bootstrap.min.css',
         'fonts/roboto/stylesheet.css',
         'fonts/bebas/stylesheet.css',
+        'fonts/fa/stylesheet.css',
         'css/app.css',
     ];
 
