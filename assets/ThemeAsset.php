@@ -20,11 +20,13 @@ class ThemeAsset extends AssetBundle
         'fonts/roboto/stylesheet.css',
         'fonts/bebas/stylesheet.css',
         'fonts/fa/stylesheet.css',
+//        'vendor/jackocnr/intl-tel-input/build/css/intlTelInput.min.css',
         'css/app.css',
     ];
 
     public $js = [
         'bs5/js/bootstrap.bundle.min.js',
+//        'vendor/jackocnr/intl-tel-input/build/js/intlTelInput-jquery.min.js',
         'js/app.js',
     ];
 

@@ -28,42 +28,42 @@
   --bs-gray-700: #4A5059;
   --bs-gray-800: #343A43;
   --bs-gray-900: #1F252E;
-  --bs-primary: #FA5F55;
+  --bs-primary: #6366f1;
   --bs-secondary: #6E747D;
   --bs-success: #81B35A;
-  --bs-info: #26CAD3;
+  --bs-info: #4c82f7;
   --bs-warning: #FFBC00;
   --bs-danger: #FA5F55;
   --bs-light: #F6F9FF;
   --bs-dark: #1F252E;
-  --bs-primary-rgb: 250, 95, 85;
+  --bs-primary-rgb: 99, 102, 241;
   --bs-secondary-rgb: 110, 116, 125;
   --bs-success-rgb: 129, 179, 90;
-  --bs-info-rgb: 38, 202, 211;
+  --bs-info-rgb: 76, 130, 247;
   --bs-warning-rgb: 255, 188, 0;
   --bs-danger-rgb: 250, 95, 85;
   --bs-light-rgb: 246, 249, 255;
   --bs-dark-rgb: 31, 37, 46;
-  --bs-primary-text-emphasis: #642622;
+  --bs-primary-text-emphasis: #282960;
   --bs-secondary-text-emphasis: #2c2e32;
   --bs-success-text-emphasis: #344824;
-  --bs-info-text-emphasis: #0f5154;
+  --bs-info-text-emphasis: #1e3463;
   --bs-warning-text-emphasis: #664b00;
   --bs-danger-text-emphasis: #642622;
   --bs-light-text-emphasis: #4A5059;
   --bs-dark-text-emphasis: #4A5059;
-  --bs-primary-bg-subtle: #fedfdd;
+  --bs-primary-bg-subtle: #e0e0fc;
   --bs-secondary-bg-subtle: #e2e3e5;
   --bs-success-bg-subtle: #e6f0de;
-  --bs-info-bg-subtle: #d4f4f6;
+  --bs-info-bg-subtle: #dbe6fd;
   --bs-warning-bg-subtle: #fff2cc;
   --bs-danger-bg-subtle: #fedfdd;
   --bs-light-bg-subtle: #fbfcff;
   --bs-dark-bg-subtle: #CED4DD;
-  --bs-primary-border-subtle: #fdbfbb;
+  --bs-primary-border-subtle: #c1c2f9;
   --bs-secondary-border-subtle: #c5c7cb;
   --bs-success-border-subtle: #cde1bd;
-  --bs-info-border-subtle: #a8eaed;
+  --bs-info-border-subtle: #b7cdfc;
   --bs-warning-border-subtle: #ffe499;
   --bs-danger-border-subtle: #fdbfbb;
   --bs-light-border-subtle: #E6ECF5;
@@ -91,11 +91,11 @@
   --bs-tertiary-color-rgb: 31, 37, 46;
   --bs-tertiary-bg: #F6F9FF;
   --bs-tertiary-bg-rgb: 246, 249, 255;
-  --bs-link-color: #FA5F55;
-  --bs-link-color-rgb: 250, 95, 85;
+  --bs-link-color: #6366f1;
+  --bs-link-color-rgb: 99, 102, 241;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #c84c44;
-  --bs-link-hover-color-rgb: 200, 76, 68;
+  --bs-link-hover-color: #4f52c1;
+  --bs-link-hover-color-rgb: 79, 82, 193;
   --bs-code-color: #D86C94;
   --bs-highlight-bg: #fff2cc;
   --bs-border-width: 1px;
@@ -115,7 +115,7 @@
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(250, 95, 85, 0.25);
+  --bs-focus-ring-color: rgba(99, 102, 241, 0.25);
   --bs-form-valid-color: #81B35A;
   --bs-form-valid-border-color: #81B35A;
   --bs-form-invalid-color: #FA5F55;
@@ -138,34 +138,34 @@
   --bs-tertiary-color-rgb: 174, 180, 189;
   --bs-tertiary-bg: #2a3039;
   --bs-tertiary-bg-rgb: 42, 48, 57;
-  --bs-primary-text-emphasis: #fc9f99;
+  --bs-primary-text-emphasis: #a1a3f7;
   --bs-secondary-text-emphasis: #a8acb1;
   --bs-success-text-emphasis: #b3d19c;
-  --bs-info-text-emphasis: #7ddfe5;
+  --bs-info-text-emphasis: #94b4fa;
   --bs-warning-text-emphasis: #ffd766;
   --bs-danger-text-emphasis: #fc9f99;
   --bs-light-text-emphasis: #F6F9FF;
   --bs-dark-text-emphasis: #DCE2EB;
-  --bs-primary-bg-subtle: #321311;
+  --bs-primary-bg-subtle: #141430;
   --bs-secondary-bg-subtle: #161719;
   --bs-success-bg-subtle: #1a2412;
-  --bs-info-bg-subtle: #08282a;
+  --bs-info-bg-subtle: #0f1a31;
   --bs-warning-bg-subtle: #332600;
   --bs-danger-bg-subtle: #321311;
   --bs-light-bg-subtle: #343A43;
   --bs-dark-bg-subtle: #1a1d22;
-  --bs-primary-border-subtle: #963933;
+  --bs-primary-border-subtle: #3b3d91;
   --bs-secondary-border-subtle: #42464b;
   --bs-success-border-subtle: #4d6b36;
-  --bs-info-border-subtle: #17797f;
+  --bs-info-border-subtle: #2e4e94;
   --bs-warning-border-subtle: #997100;
   --bs-danger-border-subtle: #963933;
   --bs-light-border-subtle: #4A5059;
   --bs-dark-border-subtle: #343A43;
-  --bs-link-color: #fc9f99;
-  --bs-link-hover-color: #fdb2ad;
-  --bs-link-color-rgb: 252, 159, 153;
-  --bs-link-hover-color-rgb: 253, 178, 173;
+  --bs-link-color: #a1a3f7;
+  --bs-link-hover-color: #b4b5f9;
+  --bs-link-color-rgb: 161, 163, 247;
+  --bs-link-hover-color-rgb: 180, 181, 249;
   --bs-code-color: #e8a7bf;
   --bs-border-color: #4A5059;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
@@ -183,7 +183,7 @@
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(250, 95, 85, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(99, 102, 241, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -198,7 +198,7 @@
 
 .text-bg-info {
   color: #000 !important;
-  background-color: RGBA(38, 202, 211, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(76, 130, 247, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-warning {
@@ -227,9 +227,9 @@
   text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-primary:hover, .link-primary:focus {
-  color: RGBA(251, 127, 119, var(--bs-link-opacity, 1));
-  -webkit-text-decoration-color: RGBA(251, 127, 119, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(251, 127, 119, var(--bs-link-underline-opacity, 1));
+  color: RGBA(130, 133, 244, var(--bs-link-opacity, 1));
+  -webkit-text-decoration-color: RGBA(130, 133, 244, var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(130, 133, 244, var(--bs-link-underline-opacity, 1));
 }
 
 .link-secondary {
@@ -260,9 +260,9 @@
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(81, 213, 220, var(--bs-link-opacity, 1));
-  -webkit-text-decoration-color: RGBA(81, 213, 220, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(81, 213, 220, var(--bs-link-underline-opacity, 1));
+  color: RGBA(112, 155, 249, var(--bs-link-opacity, 1));
+  -webkit-text-decoration-color: RGBA(112, 155, 249, var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(112, 155, 249, var(--bs-link-underline-opacity, 1));
 }
 
 .link-warning {
