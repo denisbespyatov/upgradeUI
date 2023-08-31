@@ -17,11 +17,13 @@ class ThemeAsset extends AssetBundle
 
     public $css = [
         YII_ENV !== 'prod' ? 'bs5/css/bootstrap.css' : 'bs5/css/bootstrap.min.css',
-        'fonts/roboto/stylesheet.css',
+//        'fonts/gilroy/stylesheet.css',
+        'fonts/inter/stylesheet.css',
         'fonts/bebas/stylesheet.css',
         'fonts/fa/stylesheet.css',
 //        'vendor/jackocnr/intl-tel-input/build/css/intlTelInput.min.css',
         'css/app.css',
+//        '/--ui--/css/app.css',
     ];
 
     public $js = [
